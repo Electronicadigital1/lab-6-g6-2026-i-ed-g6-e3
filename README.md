@@ -18,15 +18,14 @@ Indice:
 5. [Referencias](#referencias)
 
 ## Diseño implementado
-### Descripción
 
-### Diagramas
+El diseño implementado corresponde a un controlador en Verilog para una pantalla LCD1602 sobre FPGA, cuyo objetivo es recibir un valor binario de 8 bits desde interruptores (sw[7:0]), convertirlo a formato decimal en ASCII y visualizarlo en pantalla junto con el texto fijo “Bateria”. La arquitectura del sistema se organiza de forma modular para separar claramente las tareas de temporización, procesamiento de datos y control secuencial.
 
+En primer lugar, se implementa un bloque de generación de temporización mediante un contador que divide la frecuencia del reloj principal de la FPGA. Este bloque produce una señal de habilitación de baja frecuencia utilizada para sincronizar la comunicación con la LCD, garantizando el cumplimiento de los tiempos mínimos requeridos por el dispositivo. Esta señal no actúa como un reloj convencional, sino como un pulso de control para la escritura de datos.
 
-## Simulaciones 
+El segundo bloque corresponde al procesamiento de entrada, donde el valor binario sw[7:0] se convierte a representación decimal mediante operaciones de división y módulo, obteniendo centenas, decenas y unidades. Posteriormente, cada dígito se transforma a su equivalente ASCII sumando el valor base del carácter ‘0’. Adicionalmente, se incorpora un sistema de detección de cambios que compara el valor actual con el anterior, activando una señal de actualización únicamente cuando se detecta una variación en las entradas.
 
-<!-- (Incluir las de Digital si hicieron uso de esta herramienta, pero también deben incluir simulaciones realizadas usando un simulador HDL como por ejemplo Icarus Verilog + GTKwave) -->
-
+Finalmente, el control general del sistema se realiza mediante una máquina de estados finitos (FSM), encargada de inicializar la LCD, posicionar el cursor, escribir los caracteres en ambas líneas y gestionar la actualización dinámica del display. Esta FSM coordina el envío de comandos y datos a través del bus de 8 bits, controlando las señales RS, RW, Enable y Data[7:0]. En conjunto, el diseño permite una interfaz estable entre la FPGA y la LCD1602, asegurando una visualización correcta y coherente de la información en todo momento.
 
 ## Implementación
 
@@ -587,4 +586,4 @@ Asimismo, se verificó el correcto funcionamiento de la máquina de estados fini
 
 Finalmente, se concluye que el diseño cumple con los objetivos propuestos, logrando una interfaz estable entre la FPGA y la LCD1602, con una correcta sincronización temporal y una visualización coherente de la información. Este tipo de implementación refuerza conceptos clave de diseño digital como control secuencial, manejo de periféricos y procesamiento de datos en hardware.
 
-## Referencias
+
