@@ -31,7 +31,7 @@ bloques funcionales principales: generación del reloj de comunicación, procesa
 máquina de estados y visualización en la LCD.
 </p>
 
-<hr>
+
 
 <h2>1. Generación del reloj de 16 ms y señales de control de la LCD</h2>
 <img src="generaciondelreloj.jpg" width="1000">
