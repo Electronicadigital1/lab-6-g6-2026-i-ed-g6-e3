@@ -136,7 +136,7 @@ temporales impuestas por el dispositivo.
 <hr>
 
 <h2>2. Entradas, conversión binario–decimal–ASCII y detección de cambios</h2>
-
+<img src="Entradasconversio.jpg" width="1000">
 <p>
 La información mostrada en la pantalla proviene de los interruptores conectados a la entrada
 <code>sw[7:0]</code>. Estos ocho bits representan un número binario sin signo cuyo rango es:
@@ -243,7 +243,7 @@ Este mecanismo evita reescrituras innecesarias y mejora la eficiencia del sistem
 <hr>
 
 <h2>3. Máquina de estados finitos (FSM)</h2>
-
+<img src="Maquinasdeestados.jpg" width="1000">
 <p>
 La máquina de estados es el núcleo de control del controlador LCD. Su función es coordinar la
 inicialización del display, la escritura de caracteres y la actualización de la información.
@@ -398,7 +398,8 @@ Posteriormente reinicia el proceso de escritura para actualizar la información.
 <hr>
 
 <h2>4. Información enviada a la LCD y ejemplo de funcionamiento</h2>
-
+<img src="LCD.jpg" width="1000">
+<p>
 <p>
 La comunicación con la LCD se realiza mediante la transmisión secuencial de comandos y caracteres
 ASCII sobre el bus <code>data[7:0]</code>.
