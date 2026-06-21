@@ -1,4 +1,4 @@
-
+ 
 #  <img src="/Lab6.jpg" width="1000">
 
 ## Integrantes 
@@ -30,11 +30,6 @@ Indice:
 
 ## Implementación
 
-
-## Conclusiones
-
-
-## Referencias
 
 <h1>Análisis del controlador LCD1602 en Verilog</h1>
 
@@ -542,3 +537,10 @@ En conclusión, el módulo implementa una arquitectura basada en una máquina de
 permite inicializar una pantalla LCD1602, convertir información binaria en texto legible y actualizar
 dinámicamente la visualización cada vez que se detecta una modificación en las entradas del sistema.
 </p>
+
+
+
+## Conclusiones
+
+
+## Referencias
