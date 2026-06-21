@@ -1,5 +1,5 @@
 
-#  <img src="/Lab.jpg" width="1000">
+#  <img src="/Lab2.jpg" width="1000">
 
 ## Integrantes 
 
