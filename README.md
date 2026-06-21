@@ -1,9 +1,12 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=24117335&assignment_repo_type=AssignmentRepo)
-# Lab04 - Visualización usando pantalla LCD 16x2
 
-# Integrantes
+#  <img src="/Lab.jpg" width="1000">
 
+## Integrantes 
 
+- **Ana María Garnica Vargas cc.1098506060** 
+- **Diego Alejandro Garzon Niño cc.1069256890** 
+- **Kevin Santiago Umaña Cervera cc.112211939** 
+**Junio 2026**
 # Informe
 
 Indice:
