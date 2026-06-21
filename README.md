@@ -579,5 +579,12 @@ En conjunto, los tres casos demuestran que el controlador LCD funciona de manera
 
 ## Conclusiones
 
+El desarrollo del controlador para la pantalla LCD1602 en FPGA permitió integrar de manera funcional varios bloques fundamentales de la electrónica digital, como la generación de señales de temporización, el procesamiento de datos de entrada y la implementación de una máquina de estados finitos para el control secuencial del sistema. Esto demuestra la importancia de una arquitectura modular para garantizar el correcto funcionamiento de sistemas digitales complejos.
+
+Se comprobó que la conversión de valores binarios de 8 bits a representación decimal en formato ASCII se realiza de manera correcta para todo el rango de entrada (0 a 255). Los casos evaluados validaron la precisión del sistema tanto en valores extremos como en valores intermedios, evidenciando la correcta implementación del algoritmo de conversión y del manejo de datos para visualización en pantalla.
+
+Asimismo, se verificó el correcto funcionamiento de la máquina de estados finitos encargada de la inicialización, escritura y actualización de la LCD. El uso de detección de cambios en la entrada (sw_changed) permitió optimizar el sistema al evitar escrituras innecesarias, mejorando la eficiencia del controlador.
+
+Finalmente, se concluye que el diseño cumple con los objetivos propuestos, logrando una interfaz estable entre la FPGA y la LCD1602, con una correcta sincronización temporal y una visualización coherente de la información. Este tipo de implementación refuerza conceptos clave de diseño digital como control secuencial, manejo de periféricos y procesamiento de datos en hardware.
 
 ## Referencias
