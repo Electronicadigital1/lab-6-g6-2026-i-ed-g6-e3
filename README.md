@@ -7,7 +7,6 @@
 - **Diego Alejandro Garzon Niño cc.1069256890** 
 - **Kevin Santiago Umaña Cervera cc.112211939** 
 **Junio 2026**
-# Informe
 
 ## Diseño implementado
 
@@ -22,7 +21,7 @@ Finalmente, el control general del sistema se realiza mediante una máquina de e
 
 
 
-<h1>Análisis del controlador LCD1602 en Verilog</h1>
+## Análisis del controlador LCD1602 en Verilog
 <p>
 El presente módulo implementa un controlador para una pantalla LCD1602 utilizando una FPGA.
 Su función principal consiste en leer un valor binario de 8 bits proveniente de interruptores
