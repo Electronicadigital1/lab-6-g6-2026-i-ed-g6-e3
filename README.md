@@ -556,16 +556,20 @@ l diseño fue implementado y probado en la tarjeta FPGA, verificando su correcto
 ![pinplanerbcd](figures/1punto.png)
 
 ### RESULTADOS FPGA PANTALLA LCD DINAMICA
+En esta sección se evalúa el funcionamiento del controlador LCD1602 implementado en FPGA mediante tres casos de prueba representativos. El objetivo es validar la correcta conversión de valores binarios de 8 bits a representación decimal en formato ASCII, así como el comportamiento dinámico de la máquina de estados encargada de la actualización de la pantalla. En todos los casos, la salida esperada es la visualización del texto “Bateria” acompañado del valor decimal correspondiente a las entradas sw[7:0].
 #### CASO 1
-
+En el primer caso, se aplica el valor máximo de entrada 255 (11111111₂). La pantalla muestra correctamente “Bateria 255” en ambas líneas, lo que confirma que el sistema es capaz de manejar el rango completo de 8 bits sin errores de desbordamiento ni fallos en la descomposición en centenas, decenas y unidades. Esto valida el correcto funcionamiento del bloque de conversión binario–decimal y su posterior transformación a ASCII.
 ![pinplanerbcd](figures/CASO1.png)
 
 #### CASO 2
-
+En el segundo caso, se evalúa el valor mínimo no nulo 7 (00000111₂). El sistema muestra “Bateria 7” de forma estable, sin residuos de dígitos previos en pantalla. Esto evidencia que la lógica de escritura en la LCD gestiona adecuadamente los números de un solo dígito, evitando errores comunes como la persistencia de caracteres antiguos, lo cual depende directamente del control de la FSM y del manejo correcto del cursor.
 ![pinplanerbcd](figures/CASO2.png)
 
 #### CASO 3 
+Finalmente, en el tercer caso se utiliza el valor intermedio 63 (00111111₂). La salida “Bateria 63” confirma el correcto funcionamiento del sistema en condiciones típicas de operación. En este punto se valida la estabilidad general del diseño, ya que el sistema realiza correctamente la separación en decenas y unidades y actualiza la pantalla sin inconsistencias.
 ![pinplanerbcd](figures/CASO3.png)
+
+En conjunto, los tres casos demuestran que el controlador LCD funciona de manera correcta en todo el rango de operación de 0 a 255. Se valida tanto la precisión en la conversión de datos como la estabilidad de la máquina de estados y la correcta sincronización de la interfaz con la LCD1602.
 ## Conclusiones
 
 
