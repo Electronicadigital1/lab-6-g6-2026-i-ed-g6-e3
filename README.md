@@ -543,6 +543,7 @@ dinámicamente la visualización cada vez que se detecta una modificación en la
 
 ## RESULTADOS 
 ##  RESULTADOS FPGA PANTALLA LCD ESTATICA
+l diseño fue implementado y probado en la tarjeta FPGA, verificando su correcto funcionamiento sobre el hardware real. Durante las pruebas se observó que la señal ready_i controla el inicio de la secuencia de escritura de la pantalla LCD. Cuando esta señal permanecía activada, la máquina de estados reiniciaba continuamente el proceso de envío de comandos y datos, ocasionando que el texto apareciera y desapareciera periódicamente en la pantalla. Por otro lado, cuando ready_i permanecía desactivada después de la inicialización, el mensaje mostrado permanecía estable y estático. Como se puede apreciar en la figura correspondiente, la pantalla LCD visualiza correctamente los mensajes "BATERIA 1" y "BATERIA 2" en la primera y segunda línea, respectivamente, validando el correcto funcionamiento del controlador implementado.
 
 ![pinplanerbcd](figures/1punto.png)
 
