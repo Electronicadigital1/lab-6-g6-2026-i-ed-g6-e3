@@ -544,6 +544,8 @@ dinámicamente la visualización cada vez que se detecta una modificación en la
 ### RESULTADOS FPGA PANTALLA LCD DINAMICA
 #### CASO 1
 
+![pinplanerbcd](Readme_Guia/figures/caso2pwm.png)
+
 #### CASO 2
 
 #### CASO 3 
