@@ -33,7 +33,8 @@ máquina de estados y visualización en la LCD.
 
 
 
-<h2>1. Generación del reloj de 16 ms y señales de control de la LCD</h2>
+## 1. Generación del reloj de 16 ms y señales de control de la LCD
+
 <img src="generaciondelreloj.jpg" width="1000">
 <p>
 La pantalla LCD1602 posee tiempos de respuesta significativamente mayores que la frecuencia de
@@ -125,7 +126,7 @@ temporales impuestas por el dispositivo.
 
 <hr>
 
-<h2>2. Entradas, conversión binario–decimal–ASCII y detección de cambios</h2>
+## 2. Entradas, conversión binario–decimal–ASCII y detección de cambios
 <img src="Entradasconversio.jpg" width="1000">
 <p>
 La información mostrada en la pantalla proviene de los interruptores conectados a la entrada
@@ -232,7 +233,7 @@ Este mecanismo evita reescrituras innecesarias y mejora la eficiencia del sistem
 
 <hr>
 
-<h2>3. Máquina de estados finitos (FSM)</h2>
+## 3. Máquina de estados finitos (FSM)
 <img src="Maquinasdeestados.jpg" width="1000">
 <p>
 La máquina de estados es el núcleo de control del controlador LCD. Su función es coordinar la
