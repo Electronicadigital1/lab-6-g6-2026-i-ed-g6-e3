@@ -531,6 +531,8 @@ LCD1602
 Visualización del mensaje
 </pre>
 
+
+
 <p>
 En conclusión, el módulo implementa una arquitectura basada en una máquina de estados finitos que
 permite inicializar una pantalla LCD1602, convertir información binaria en texto legible y actualizar
@@ -538,6 +540,13 @@ dinámicamente la visualización cada vez que se detecta una modificación en la
 </p>
 
 
+## RESULTADOS 
+### RESULTADOS FPGA PANTALLA LCD DINAMICA
+#### CASO 1
+
+#### CASO 2
+
+#### CASO 3 
 
 ## Conclusiones
 
