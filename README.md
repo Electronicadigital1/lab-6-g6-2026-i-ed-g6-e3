@@ -9,7 +9,6 @@
 **Junio 2026**
 # Informe
 
-
 ## Diseño implementado
 
 El diseño implementado corresponde a un controlador en Verilog para una pantalla LCD1602 sobre FPGA, cuyo objetivo es recibir un valor binario de 8 bits desde interruptores (sw[7:0]), convertirlo a formato decimal en ASCII y visualizarlo en pantalla junto con el texto fijo “Bateria”. La arquitectura del sistema se organiza de forma modular para separar claramente las tareas de temporización, procesamiento de datos y control secuencial.
