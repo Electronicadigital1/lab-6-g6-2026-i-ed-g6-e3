@@ -32,7 +32,6 @@ Indice:
 
 
 <h1>Análisis del controlador LCD1602 en Verilog</h1>
-
 <p>
 El presente módulo implementa un controlador para una pantalla LCD1602 utilizando una FPGA.
 Su función principal consiste en leer un valor binario de 8 bits proveniente de interruptores
@@ -45,7 +44,7 @@ máquina de estados y visualización en la LCD.
 <hr>
 
 <h2>1. Generación del reloj de 16 ms y señales de control de la LCD</h2>
-
+<img src="generaciondelreloj.jpg" width="1000">
 <p>
 La pantalla LCD1602 posee tiempos de respuesta significativamente mayores que la frecuencia de
 operación de una FPGA. Por esta razón, no es posible transmitir información directamente utilizando
