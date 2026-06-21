@@ -542,6 +542,14 @@ dinámicamente la visualización cada vez que se detecta una modificación en la
 
 
 ## RESULTADOS 
+### RESULTADO TESTBENCH PANTALLA LCD ESTATICA 
+
+El testbench desarrollado tiene como propósito verificar el correcto funcionamiento del módulo `LCD1602_controller` mediante simulación. Para ello, se generan las señales de entrada necesarias, incluyendo el reloj (`clk`), la señal de reinicio (`rst`) y la señal de habilitación (`ready_i`). El reloj se genera de manera periódica con un período de 20 ns mediante una instrucción `always`, permitiendo el avance temporal de la máquina de estados.
+
+Inicialmente se activa la señal de reinicio para garantizar que el sistema comience desde un estado conocido y posteriormente se desactiva para iniciar la ejecución normal del controlador. La señal `ready_i` se mantiene en nivel alto para permitir que la FSM inicie el proceso de configuración de la pantalla LCD y la transmisión de datos. la simulación se ejecuta durante un tiempo suficiente para observar la secuencia completa de inicialización de la pantalla, el envío de los comandos de configuración y la escritura de los caracteres correspondientes al mensaje estático mostrado en las dos líneas de la LCD.
+
+![pinplanerbcd](figures/imagen_2026-06-20_222717059.png)
+
 ##  RESULTADOS FPGA PANTALLA LCD ESTATICA
 l diseño fue implementado y probado en la tarjeta FPGA, verificando su correcto funcionamiento sobre el hardware real. Durante las pruebas se observó que la señal ready_i controla el inicio de la secuencia de escritura de la pantalla LCD. Cuando esta señal permanecía activada, la máquina de estados reiniciaba continuamente el proceso de envío de comandos y datos, ocasionando que el texto apareciera y desapareciera periódicamente en la pantalla. Por otro lado, cuando ready_i permanecía desactivada después de la inicialización, el mensaje mostrado permanecía estable y estático. Como se puede apreciar en la figura correspondiente, la pantalla LCD visualiza correctamente los mensajes "BATERIA 1" y "BATERIA 2" en la primera y segunda línea, respectivamente, validando el correcto funcionamiento del controlador implementado.
 
