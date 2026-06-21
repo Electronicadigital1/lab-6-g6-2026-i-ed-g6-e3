@@ -549,8 +549,8 @@ dinámicamente la visualización cada vez que se detecta una modificación en la
 #### CASO 2
 
 ![pinplanerbcd](figures/CASO2.png)
-#### CASO 3 
 
+#### CASO 3 
 ![pinplanerbcd](figures/CASO3.png)
 ## Conclusiones
 
