@@ -9,13 +9,6 @@
 **Junio 2026**
 # Informe
 
-Indice:
-
-1. [Diseño implementado](#diseño-implementado)
-2. [Simulaciones](#simulaciones)
-3. [Implementación](#implementación)
-4. [Conclusiones](#conclusiones)
-5. [Referencias](#referencias)
 
 ## Diseño implementado
 
@@ -27,7 +20,7 @@ El segundo bloque corresponde al procesamiento de entrada, donde el valor binari
 
 Finalmente, el control general del sistema se realiza mediante una máquina de estados finitos (FSM), encargada de inicializar la LCD, posicionar el cursor, escribir los caracteres en ambas líneas y gestionar la actualización dinámica del display. Esta FSM coordina el envío de comandos y datos a través del bus de 8 bits, controlando las señales RS, RW, Enable y Data[7:0]. En conjunto, el diseño permite una interfaz estable entre la FPGA y la LCD1602, asegurando una visualización correcta y coherente de la información en todo momento.
 
-## Implementación
+
 
 
 <h1>Análisis del controlador LCD1602 en Verilog</h1>
